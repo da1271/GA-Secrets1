@@ -14,7 +14,7 @@ Read Me:
 * Installation process: link
 
 * Wireframes: 
-![Wireframe](vendor/assets/frame1.jpg)
+![Wireframe](app/assets/frame1.jpg)
 ![Wireframe](vendor/assets/frame2.jpg)
 ![Wireframe](vendor/assets/frame3.jpg)
 ![Wireframe](vendor/assets/frame4.jpg)
