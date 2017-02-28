@@ -1,25 +1,22 @@
-# README
+# GA Secrets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Read Me:
 
-* Ruby version
+* Trello: https://trello.com/b/NEK0uTFh/ga-secrets
 
-* System dependencies
+* Approach Taken: GA Secrets will be an anonymous website where users can make any posts, comments or questions for the GA community.
 
-* Configuration
+* Github:https://github.com/da1271/GA-Secrets1
 
-* Database creation
+* Tech used: Ruby on rails
 
-* Database initialization
+* Installation process: link
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# GA-Secrets1
+* Wireframes: 
+![Wireframe](vendor/assets/frame1.jpg)
+![Wireframe](vendor/assets/frame2.jpg)
+![Wireframe](vendor/assets/frame3.jpg)
+![Wireframe](vendor/assets/frame4.jpg)
+![Wireframe](vendor/assets/frame5.jpg)
+![Wireframe](vendor/assets/frame6.jpg)
