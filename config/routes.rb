@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'pages/secret'
+resources :posts
 
     root to: 'users#new'
 
@@ -9,10 +9,17 @@ Rails.application.routes.draw do
 
 
     get '/login'     => 'sessions#new'
-
     post '/login'    => 'sessions#create'
-
     delete '/logout' => 'sessions#destroy', as: :logout
+
+    get "users/:id/edit" => "users#edit", as: :edit_user
+    patch "users/:id" => "users#update"
+    delete "posts/:id" => "posts#destroy"
+
+
+    # get 'posts/new' => 'posts#new', as: :new_post
+    # post 'posts' => 'posts#create'
+
 
 
 end

@@ -1,0 +1,27 @@
+<h1>Add a new Post!</h1>
+<%= form_for @post do |f| %>
+
+
+
+    <div>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+    </div>
+
+    <div>
+        <%= f.label :content %>
+        <%= f.text_field :content %>
+    </div>
+
+    <div>
+        <%= f.label :anonymous %>
+        <%= f.check_box :anonymous %> <br />
+
+    </div>
+
+
+    <%= f.submit "Add new Post!" %>
+
+<% end %>
+
+<%= link_to "Back to the list!", posts_path %>
