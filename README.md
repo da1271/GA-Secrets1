@@ -9,7 +9,7 @@ Read Me:
 
 * Github:https://github.com/da1271/GA-Secrets1
 
-* Tech used: Ruby on rails
+* Tech used: Ruby 2.3.1, rails 5.0.1, js, css, html, postgresql, heroku, gems
 
 * Unsolved issues: completed all MVP's.
 
