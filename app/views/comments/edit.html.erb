@@ -1,0 +1,22 @@
+<h1>Edit your comment!</h1>
+<%= form_for [@post, @comment] do |f| %>
+<br>
+
+
+    <div>
+        <%= f.label :content %>
+        <%= f.text_field :content, :size => 150 %>
+    </div>
+<br>
+    <div>
+        <%= f.label :anonymous %>
+        <%= f.check_box :anonymous %> <br />
+
+    </div>
+
+<br>
+    <%= f.submit "Edit Comment!" %>
+
+  <% end %>
+<br>
+  <%= link_to "Back to the post!", posts_path %>

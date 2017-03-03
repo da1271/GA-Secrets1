@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+ @import "bootstrap-sprockets";
+ @import "bootswatch/cyborg/variables";
+ @import "bootstrap";
+ @import "bootswatch/cyborg/bootswatch";
+
+ h1   {color: red;
+    text-align: center;
+    padding-bottom: 50px;}
+ th   {color: white;
+       font-size: 20px;}
+#newStoryLink {
+    float: right;
+    padding-right: -10px;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 16px;
+    color: red;
+}
+
+.postTableCss  {
+   color: red;
+}
+.mainPageCss  {
+  float: left;
+}
+.center  {
+  margin: auto;
+  padding: 10px;
+  color: red;
+  padding-top: 27px;
+  font-weight: bold;
+  padding-left: 100px;
+}
+
+.logo img {
+  max-width:100%;
+
+}
+
+.logoPic  {
+  position: fixed;
+   bottom: 10%;
+  right: 15%;
+
+  background-image: url('GA.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat-y;
+  -webkit-filter: sepia(30%);
+
+  width: 500px;
+  height: 500px;
+
+}
+#postTable  {
+  padding-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+#postTitle  {
+  font-size: 50px;
+  text-align: center;
+  color: red;
+}
+#postContent  {
+  font-size: 18px;
+  color: white;
+}
+#commentTable  {
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+#makeComment{
+  float:right;
+}
+#editComment{
+  float:right;
+}
+#deleteComment{
+  float:right;
+}
+#newPost  {
+  text-align: center;
+  color: red;
+  font-size: 40px;
+}
+#newPostContent  {
+  width: 50em;
+  height: 100%;
+}

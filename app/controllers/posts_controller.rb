@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  before_action :authorize, only: [:posts, :edit, :new, :show]
+  before_action :authorize, only: [:posts, :edit, :new, :show, :secret]
 
  def secret
   end
@@ -12,7 +12,7 @@ end
 
 def show
    @post = Post.find(params[:id])
-  #  @comments = Comment.where(post_id: @post).order("created_at DESC")
+    @comments = Comment.where(post_id: @post).order("created_at DESC")
  end
 
 
@@ -28,7 +28,7 @@ def show
   def create
      @post = current_user.posts.new(post_params)
      if @post.save
-       redirect_to :posts
+       redirect_to post_path(@post)
      else
        redirect_to new_post_path
      end
@@ -37,7 +37,7 @@ def show
   def update
      @post = Post.find(params[:id])
      if @post.update_attributes(post_params)
-       redirect_to :post
+       redirect_to post_path(@post)
      else
        render :edit
      end
@@ -46,7 +46,7 @@ def show
   def destroy
      @post = Post.find(params[:id])
      @post.destroy
-     redirect_to posts_path
+     redirect_to :posts
 
 
     # redirect_to posts_path

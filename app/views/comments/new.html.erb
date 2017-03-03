@@ -1,20 +1,22 @@
 <h1>Add a new Comment!</h1>
-<%= form_for @post do |f| %>
+<%= form_for [@post, @comment] do |f| %>
 
-
-
-    <div>
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-    </div>
+<br>
 
     <div>
         <%= f.label :content %>
-        <%= f.text_field :content %>
+        <%= f.text_field :content, :size => 150 %>
     </div>
+<br>
+    <div>
+        <%= f.label :anonymous %>
+        <%= f.check_box :anonymous %> <br />
+
+    </div>
+<br>
 
     <%= f.submit "Add new Comment!" %>
 
   <% end %>
-
-  <%= link_to "Back to the list!", posts_path %>
+<br>
+  <%= link_to "Back to the post!", posts_path %>

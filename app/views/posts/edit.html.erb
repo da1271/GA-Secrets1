@@ -6,21 +6,21 @@
         <%= f.label :title %>
         <%= f.text_field :title %>
     </div>
-
+<br>
     <div>
         <%= f.label :content %>
-        <%= f.text_field :content %>
+        <%= f.text_field :content, :size => 150 %>
     </div>
-
+<br>
     <div>
         <%= f.label :anonymous %>
         <%= f.check_box :anonymous %> <br />
 
     </div>
 
-
+<br>
     <%= f.submit "Edit Post!" %>
 
 <% end %>
-
+<br>
 <%= link_to "Back to the list!", posts_path %>

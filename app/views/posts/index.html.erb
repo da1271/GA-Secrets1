@@ -1,10 +1,12 @@
 <h1>Welcome to GA-Secrets</h1>
 
-<table>
+<table id="postTable" class="table">
   <thead>
+
+  <div id="newStoryLink"><%= link_to "+ Add New Post", new_post_path %></div>
     <tr>
-      <th>title</th>
-      <th>content: </th>
+      <th class="postTableCss">Title</th>
+      <th class="postTableCss">Content </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,12 +16,11 @@
       <tr>
         <td><%= post.title %> -- </td>
         <td><%= post.content %> -- </td>
-
         <td><%= link_to "Read Story", post_path(post) %></td>
       </tr>
+
     <% end %>
   </tbody>
 </table>
 
 <br>
-<%= link_to "New Story", new_post_path %>
