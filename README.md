@@ -11,12 +11,15 @@ Read Me:
 
 * Tech used: Ruby on rails
 
+* Unsolved issues: completed all MVP's.
+
 * Installation process: link
 
 * Wireframes: 
-![Wireframe](app/assets/frame1.jpg)
+![Wireframe](vendor/assets/frame1.jpg)
 ![Wireframe](vendor/assets/frame2.jpg)
 ![Wireframe](vendor/assets/frame3.jpg)
 ![Wireframe](vendor/assets/frame4.jpg)
 ![Wireframe](vendor/assets/frame5.jpg)
 ![Wireframe](vendor/assets/frame6.jpg)
+
